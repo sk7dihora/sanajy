@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interst calculater</title>
+</head>
+<body>
+    <h1>simpal interst</h1>
+    <hr>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    enter first  amount
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="amount" id="first" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    enter time period
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="period" id="secod" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    enter rate of interst
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="interst" id="therd" required>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="simple_interst()">submit</button>
+            </td>
+        </tr>
+        </table>
+    </form>
+    <div id="num1"></div>
+    <div id="num2"></div>
+    <script>
+        function simple_interst()
+        {
+            var p,t.r,si,ci
+            p = document.getElementById(first).value;
+            t = document.getElementById(secod).value;
+            r = document.getElementById(therd).value;
+            si=parseInt((p*t*r)/100);
+            //document.getElementById('num1').innerhtml
+            document.getElementById ('num').innerHTML ="Simple interest : "+si
+        }
+
+    </script>
+</body>
+</html>

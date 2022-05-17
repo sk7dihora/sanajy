@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi calculetar</title>
+</head>
+<style>h1 {color:blue;}</style>
+
+<body>
+    <h1>bmi</h1>
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> <br>
+    <a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a> <br>
+    <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a> <br>
+    <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a> <br>
+    
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    enter height
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="height" id="height" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    enter width
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="width" id="width"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="bmi();"> <abbr title="Body mass index">bmi</abbr></button>
+                </td>
+            </tr>
+            <tr>
+                    <td id="res">
+                        result
+                    </td>
+            </tr>
+
+        </table>
+    </form>
+    <script>
+        var height,width;
+        fuction getinput(){
+            height=document.getElementById(height).value;
+            width=document.getElementById(width).value;
+            height=parseFloat(height);
+            wwidth=parseInt(height);
+        }
+        fuction bmi()
+        {
+            getinput();
+            var bmi = (width)/(height*height);
+            document.getElementById(res).innerHTML=bmi
+        }
+    </script>
+</body>
+</html>

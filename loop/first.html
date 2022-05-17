@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        align = "center"
+    }
+</style>
+</head>
+<body>
+    <h1 >find square and Cube a number</h1>
+    <table align="">
+        <tr>
+            <td>
+                enter number
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="a" id="first" placeholder="enter number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="square" onclick="square();">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="sqrea" id="">
+            </td>
+        </tr>
+        <tr>
+            <td id="result">
+                result will be disply here
+            </td>
+        </tr>
+        <script>
+            fuction square()
+            {
+                var a, square, cube;
+                a=parseInt(document.getElementById("first").value);
+                square=a*a;
+                cube=a*a*a;
+                document.getElementById("result").innerHTML="square of"+a+"is :"+square;
+                document.getElementById("result").innerHTML="cube of"+a+"is :"+cube;
+        </script>
+    </table>
+    
+</body>
+</html>
